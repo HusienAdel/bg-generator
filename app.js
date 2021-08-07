@@ -35,7 +35,7 @@ form.addEventListener('submit',(e)=>{
 
 })
 
-
+let textInput;
 function copyText() {
 
 
@@ -43,26 +43,25 @@ function copyText() {
     copyCode.addEventListener('click', (e) => {
         e.preventDefault();
         let text = mybackground;
-        let textInput;
 
-        if (document.querySelector('textarea')===null) {
+      
          textInput = document.createElement('textarea');
-     
-        }
+        
 
-        if (textInput.value.length==0) {
-            console.log(textInput.value.length);
+        if (textInput.value.length===0) {
+            console.log('start first');
             textInput.value = text;
             codeWrap.append(textInput);
 
             textInput.select();
             document.execCommand("copy");
-            console.log(textInput.value.length);
+           
 
             alert('code copied successfully');
 
 
         } else if (textInput.value.length > 0) {
+            console.log('start secnd');
             console.log(textInput.value.length);
             textInput.value = text;
 
@@ -70,6 +69,9 @@ function copyText() {
             document.execCommand("copy");
             alert('code copied successfully');
 
+        }
+        else {
+            console.log('some thing wrong !');
         }
 
         
