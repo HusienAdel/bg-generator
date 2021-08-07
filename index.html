@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background gardient Geneartor</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+<div class="container">
+
+    <h1>background gardient Geneartor</h1>
+    <p>
+      this is simple web app can show you live How to make a gardient background
+      with css within selecting colors , direction then boom show it and you can
+      copy it too.
+    </p>
+
+    <form action="" id="form">
+      <h3>choose your colors</h3>
+
+      <div class="form-group">      <label for="color1">First color</label>
+      <input type="color" id="color1" /></div>
+
+
+   <div class="form-group">
+          <label for="color2">Second color</label>
+      <input type="color" id="color2" />
+   </div>
+      <div class="form-group">
+
+         <label for="direction">Gardient Direction</label>
+      <select id="direction">
+        <option value="right">right</option>
+        <option value="left">left</option>
+        <option value="top right">top right</option>
+        <option value="top left">top left</option>
+        <option value="bottom right">bottom right</option>
+        <option value="bottom left">bottom left</option>
+      </select>
+
+      </div>
+     
+
+      <input type="submit" value="Generate" />
+    </form>
+
+    <div class="codeWrap" >
+      
+        <i id="code"></i>
+
+      <span class="copy">copy</span>
+    </div>
+
+
+
+    </div>
+<script src="app.js"></script>  
+</body>
+</html>

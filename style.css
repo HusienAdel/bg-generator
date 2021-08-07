@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Patrick Hand',serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 75%;
+  margin: 5vh auto;
+  background-color: #ebebeb;
+  padding: 15px 15px 35px;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.container h1 {
+  color: orangered;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.container p {
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.container h3 {
+  color: purple;
+  font-size: 1.3rem;
+}
+
+.container .form-group {
+  margin-bottom: 20px;
+  padding: 0px 15px;
+}
+
+.container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.container .form-group input[type=color] {
+  display: block;
+  padding: 5px;
+}
+
+.container .form-group select {
+  width: 60%;
+  padding: 5px;
+}
+
+.container input[type=submit] {
+  width: 120px;
+  background-color: orange;
+  color: #000;
+  border: none;
+  height: 50px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: 'Patrick Hand',serif;
+  margin: 0 auto;
+  display: block;
+}
+
+.container div.codeWrap {
+  display: none;
+  max-width: 80%;
+  margin: 25px auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px dashed #000;
+  padding: 10px;
+  position: relative;
+  font-family: 'Patrick Hand',serif;
+}
+
+.container div.codeWrap textarea {
+  width: 85%;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+  margin-top: 5px;
+  font-size: 1.1rem;
+  padding: 5px;
+  font-family: 'Patrick Hand',serif;
+}
+
+.container div.codeWrap span.copy {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+}
+
+.copy {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
